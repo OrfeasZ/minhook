@@ -14,6 +14,6 @@ minhook = static_library('minhook',
 )
 
 minhook_dep = declare_dependency(
-	include_directories: include_directories('include'),
+	include_directories: include_directories('src', 'include'),
 	link_with: minhook
 )
